@@ -3,6 +3,7 @@ Write a program that can calculate the factorial of a given number. Results are 
 separated by commas. For example, the given number is 8 then the output should be 40320.
 
 Suggestions: In the case of input data provided, you choose how to have the user enter the number.
+--- Nguyen Van Duc ---
 """
 
 x = int(input("Enter the number to calculate the factorial: "))
