@@ -1,17 +1,18 @@
 """
-Write a program that takes 2 digits X,Y takes the values from the input and creates a 2 dimensional array. The element
-value in the i-th row and j-th column of the array must be i*j.
-Note: i = 0, 1, ..., X-1; j = 0, 1, ..., Y-1.
-For example: Input X, Y value is 3,5, the output is: [[0, 0, 0, 0, 0],[0, 1, 2, 3, 4],[0, 2, 4, 6, 8]]
-Suggestions: Write a command to get X,Y values from the console inputted by the user.
+Question 10 - Level 02
+Write a program that accepts a sequence of whitspace separated words as input and prints the words after removing all
+duplicate words and sorting them alphanumerically. Suppose the following input is supplied to the program:
+hello world and practice makes perfect and hello world again
+Then, the output should be:
+again and hello makes perfect practice world
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+We use set of container to remove duplicated data automatically and then use sorted() to sort the data.
+--- Nguyen Van Duc ---
 """
-input_str = input("Enter X, Y: ")
-dimensions = [int(x) for x in input_str.split(",")]
-rowNum = dimensions[0]
-colNum = dimensions[1]
-multi_list = [[0 for col in range(colNum)] for row in range(rowNum)]
-for row in range(rowNum):
-    for col in range(colNum):
-        multi_list[row][col] = row * col
 
-print(multi_list)
+s = input("Enter strings: ")
+words = [word for word in s.split(" ")]
+words = list(set(words))
+words.sort()
+print(" ".join(words))

@@ -1,23 +1,24 @@
 """
-Python has many built-in function, if you don't know how to use it, you can read the documentation online or find some
-books. But Python also has function documentations available for every built-in function in Python. The requirement of
-this task is to write a program to print documentation of some of the built-in Python functions such asn abs(), int(),
-input() and add documentation for the function you define yourself.
-
-Suggestions: Utilize __doc__
+Question 07 - Level 02
+Write a program which takes 2 digits, X, Y as input and generates a 2-dimensional array. The element value in the i-th
+row and j-th column of the array should be i*j. Note: i= 0, 1, ..., X-1; j= 0, 1, ..., Y-1.
+Example:
+Suppose the following inputs are given to the program:
+3, 5
+Then, the output of the program should be:
+[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
+Note: In case of input data being supplied to the question, it should be assumed to be a console input in a
+comma-separated form.
 --- Nguyen Van Duc ---
 """
-print(abs.__doc__)
-print(int.__doc__)
-print(input.__doc__)
 
+input_str = input("Enter X, Y: ")
+dimensions = [int(x) for x in input_str.split(",")]
+rowNum = dimensions[0]
+colNum = dimensions[1]
+multi_list = [[0 for col in range(colNum)] for row in range(rowNum)]
+for row in range(rowNum):
+    for col in range(colNum):
+        multi_list[row][col] = row * col
 
-def square(num):
-    """
-    Returns the square of the number entered.
-    The number entered must be integer.
-    """
-    return num ** 2
-
-
-print(square.__doc__)
+print(multi_list)

@@ -1,7 +1,10 @@
 """
-Write a program to find all numbers that are divisible by 7 but not multiples of 5, within the range 2000 and 3200
-(including 2000 and 3200). The resulting numbers will be printed as a string on one line, separated by commas.
-Hint: utilizing range(begin,end)
+Question 01 - Level 01
+Write a program which will find all such numbers which are divisible by 7 but are not multiple of 5, between 2000 and
+3000 (both included).
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+Hint:
+Consider use range(#begin, #end) method
 --- Nguyen Van Duc ---
 """
 

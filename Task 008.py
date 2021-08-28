@@ -1,25 +1,14 @@
 """
-Defines a class that has a class parameter and the same instance parameter.
-
-Suggestions:
-When defining instance parameter, need to add it to __init__
-You can initialize and object with a start parameter or set a value later.
+Question 08 - Level 02
+Write a program that accepts a comma separated of words as input and prints the words in a comma-separated sequence
+after sorting them alphabetically. Suppose the following input is supplied to the program:
+without, hello, bag, world
+Then, the output should be:
+bag, hello, without, world
+Hints: In case of input data being supplied to the question, it should be assumed to be a console input.
 --- Nguyen Van Duc ---
 """
 
-
-class Person:
-    # Define class name
-    name = "Person"
-
-    def __init__(self, name=None):
-        # self.name is instance variable
-        self.name = name
-
-
-jeffrey = Person("Jeffrey")
-print("%s name is %s" % (Person.name, jeffrey.name))
-
-nico = Person()
-nico.name = "Nico"
-print("%s name is %s" % (Person.name, nico.name))
+items = [x for x in input("Enter string: ").split(",")]
+items.sort()
+print(", ".join(items))
