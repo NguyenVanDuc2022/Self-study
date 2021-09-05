@@ -2,7 +2,7 @@
 Question 090 - Level 03
 Define a class Person and its two child classes: Male and Female. All classes have method "getGender" which can print
 "Male" for Male class and "Female" for Female class.
-Hints: Use Subclass(Parentclass) to define a child class.
+Hints: Use Subclass(Parent class) to define a child class.
 --- Nguyen Van Duc ---
 """
 
