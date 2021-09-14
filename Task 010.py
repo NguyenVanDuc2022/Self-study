@@ -1,6 +1,6 @@
 """
 Question 10 - Level 02
-Write a program that accepts a sequence of whitspace separated words as input and prints the words after removing all
+Write a program that accepts a sequence of whit space separated words as input and prints the words after removing all
 duplicate words and sorting them alphanumerically. Suppose the following input is supplied to the program:
 hello world and practice makes perfect and hello world again
 Then, the output should be:
