@@ -1,6 +1,6 @@
 import pyautogui
-from datetime import datetime
 import time
+from datetime import datetime
 
 Time1 = "15:36:50"
 Time2 = "15:36:53"
